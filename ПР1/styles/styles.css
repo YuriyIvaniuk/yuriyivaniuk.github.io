@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color:#fff;
+	text-align: center;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+.header-block {
+	height: 100vh;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(198, 108, 73, 0.30);
+}
+
+header .content-wrap .logo {
+	order: 2;
+}
+
+.icons {
+	color: #fff;
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.menu-list {
+	position: absolute;
+	background: #fff;
+}
+
+.menu-list li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.menu-list a {
+	font-size: 2rem;
+	color: #000;
+	text-decoration: none;
+}
+
+
+/*Global styles*/
+.content-wrap {
+	padding: 15px 20px 0px 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+}
+.text-box{
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+	display: inline;
+	position: relative;
+}
+.main-text{
+	padding-top:5rem;
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.main-text-red{
+	font-size: 5rem;
+}
+.second-text{
+	padding-top: 1.5rem;
+	font-size: 1.2rem;
+}
+.latest{
+	font-size: 1.2rem;
+	padding-top: 20vh;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	color:black;
+}
+.title-text{
+	font-size: 2.5rem;
+	text-align: center;
+}
+.default-text{
+	padding: 1vh 3vw;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+.center-text{
+	font-size: 1.4rem;
+	text-align: center;
+}
+.self-content{
+	width: 100%;
+}
+.self-image{
+	margin: 0 auto;	
+	width: 60vw;
+	height: 60vh;
+	background: url('../images/self-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.list-bars-container{
+	width: 60%;
+	justify-content: center;
+	margin: 0px 20%;
+	display: flex;
+}
+.skills-list li p{
+	font-size: 1rem;
+	padding: 20px 20px 20px 0px;
+}
+.bars-tools li p{
+	padding: 20px 0px;
+}
+.progress-bar{
+	padding: 0px 0px;
+	margin: 13px 0px;
+	width: 100%;
+	background-color: #f5d6ab;
+}
+.progress{
+	padding: 13px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 15%;
+}
+.progress1{
+	padding: 16px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 25%;
+}
+.progress2{
+	padding: 16px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 45%;
+}
+.portfolio{
+	background-color: lightgoldenrodyellow;
+	margin: 0 auto;
+	width: 93vw;
+	height: 20vh;
+	align-items: center;
+	position: relative;
+	display:flex;
+	flex-direction: column;	
+}
+.portfolio p{
+	text-align: center;
+	font-size: 3rem;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.portfolio a{
+	color:black;
+	font-size: 1.5rem;
+	width: 20%;
+	margin: 15px;
+	text-align: center;
+}
+@media screen and (min-width: 800px) {
+	header .content-wrap .logo {
+		order: 0;
+	}
+	.icons {
+		display: none;
+	}
+	.hide-menu {
+		position: static;
+	}
+	.menu-list {
+		background: transparent;
+	}
+	ul , ol	{
+		display: flex;
+	}
+	li{
+		padding:20px 20px 0px 20px;
+	}
+	.main-menu a {
+		font-size: 1rem;
+	}
+	.menu-list li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.self-content{
+	width: 100%;
+	display: flex;
+	padding: 1vh 3vw;
+}
+.self-image{
+	margin: 0	0	0	0;
+	width: 25%;
+	height: 50vh;
+	background: url('../images/self-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.list-bars-container{
+	margin: 0 0 ;
+	width: 100%;
+	flex-direction: row;
+}
+.skills-list{
+	width: 30%;
+}
+.list-bars-container ul{
+	display: inline;
+}
+.skills-list li{
+	padding: 0px 0px;
+}
+.skills-list li p{
+	font-size: 1rem;
+	padding: 20px 20px 20px 0px;
+}
+.bars-tools li{
+	padding: 0px 50px 0px 0px;
+}
+.bars-tools li p{
+	padding: 20px 0px;
+}
+.progress-bar{
+	margin: 14px 0px;
+	width: 100%;
+	background-color: #f5d6ab;
+}
+.progress{
+	padding: 16px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 25%;
+}
+.progress1{
+	padding: 16px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 40%;
+}
+.progress2{
+	padding: 16px 0px;
+	background-color: #c66c49;
+	height: 100%;
+	width: 60%;
+}
+}
