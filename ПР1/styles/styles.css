@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Libre Franklin";
 }
 a{
 	color:#fff;
@@ -99,9 +100,9 @@ header .content-wrap .logo {
 	position: relative;
 }
 .main-text{
-	padding-top:5rem;
+	padding-top:20vh;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	text-align: center;
 }
 .main-text-red{
@@ -112,14 +113,15 @@ header .content-wrap .logo {
 	font-size: 1.2rem;
 }
 .latest{
-	font-size: 1.2rem;
-	padding-top: 20vh;
+	font-size: 2rem;
+	padding-top: 30vh;
 	width: 100%;
 	text-align: center;
 	font-style: italic;
 	color:black;
 }
 .title-text{
+	padding-top:2vh;
 	font-size: 2.5rem;
 	text-align: center;
 }
@@ -205,6 +207,38 @@ header .content-wrap .logo {
 	margin: 15px;
 	text-align: center;
 }
+.Sources{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 50%;
+	width: 100%;
+	color:#000;
+	z-index: 10;
+}
+.Sources li{
+	margin:5vh 0px;
+}
+.Sources li a{
+	text-decoration: none;
+	margin-bottom: 20px;
+	color:#000;
+}
+.fa-chevron-up{
+	width: 100%;
+	text-align: right;
+}
+.bottom-footer{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	max-width: 1100px;
+}
+.bottom-footer a{
+	color:#000;
+}
 @media screen and (min-width: 800px) {
 	header .content-wrap .logo {
 		order: 0;
@@ -224,71 +258,121 @@ header .content-wrap .logo {
 	li{
 		padding:20px 20px 0px 20px;
 	}
+	.main-menu{
+		text-align: right;
+	}
 	.main-menu a {
-		font-size: 1rem;
+		font-size: 1.5rem;
+		color:#fff;
 	}
 	.menu-list li:not(:last-child) {
 		margin-bottom: 20px;
 	}
+	.logo{
+		font-size: 3rem;
+		width: 50%;
+		text-align: left;
+	}
+	.main-text{
+		text-align: left;
+		width: 90%;
+		max-width: 1100px;
+		padding-top: 25vh;
+		padding-left:20px;
+		font-size:5rem;
+	}
+	.second-text{
+		width: 90%;
+		max-width: 1100px;
+		padding-left:20px;
+		font-size:2rem;
+		text-align: left;
+	}
+	.latest{
+		font-size: 2rem;
+		padding-top: 30vh;
+		text-align: bottom;
+	}
+	.title-text{
+		width: 90%;
+		max-width: 1100px;
+		text-align: left;
+		padding-left: 20px;
+	}
 	.self-content{
-	width: 100%;
-	display: flex;
-	padding: 1vh 3vw;
-}
-.self-image{
-	margin: 0	0	0	0;
-	width: 25%;
-	height: 50vh;
-	background: url('../images/self-image.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.list-bars-container{
-	margin: 0 0 ;
-	width: 100%;
-	flex-direction: row;
-}
-.skills-list{
-	width: 30%;
-}
-.list-bars-container ul{
-	display: inline;
-}
-.skills-list li{
-	padding: 0px 0px;
-}
-.skills-list li p{
-	font-size: 1rem;
-	padding: 20px 20px 20px 0px;
-}
-.bars-tools li{
-	padding: 0px 50px 0px 0px;
-}
-.bars-tools li p{
-	padding: 20px 0px;
-}
-.progress-bar{
-	margin: 14px 0px;
-	width: 100%;
-	background-color: #f5d6ab;
-}
-.progress{
-	padding: 16px 0px;
-	background-color: #c66c49;
-	height: 100%;
-	width: 25%;
-}
-.progress1{
-	padding: 16px 0px;
-	background-color: #c66c49;
-	height: 100%;
-	width: 40%;
-}
-.progress2{
-	padding: 16px 0px;
-	background-color: #c66c49;
-	height: 100%;
-	width: 60%;
-}
+		width: 100%;
+		display: flex;
+		padding: 1vh 3vw;
+	}
+	.self-image{
+		margin: 0	0	0	0;
+		width: 25%;
+		height: 50vh;
+		background: url('../images/self-image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.list-bars-container{
+		margin: 0 0 ;
+		width: 100%;
+		flex-direction: row;
+	}
+	.skills-list{
+		width: 30%;
+	}
+	.list-bars-container ul{
+		display: inline;
+	}
+	.skills-list li{
+		padding: 0px 0px;
+	}
+	.skills-list li p{
+		font-size: 1rem;
+		padding: 20px 20px 20px 0px;
+	}
+	.bars-tools li{
+		padding: 0px 50px 0px 0px;
+	}
+	.bars-tools li p{
+		padding: 20px 0px;
+	}
+	.progress-bar{
+		margin: 14px 0px;
+		width: 100%;
+		background-color: #f5d6ab;
+	}
+	.progress{
+		padding: 16px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 25%;
+	}
+	.progress1{
+		padding: 16px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 40%;
+	}
+	.progress2{
+		padding: 16px 0px;
+		background-color: #c66c49;
+		height: 100%;
+		width: 60%;
+	}
+	.Sources{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.Sources ul{
+		width: 50%;
+		text-align: left;
+		display: inline;
+	}
+	.Sources li{
+		display: list-item;
+		margin: 0;
+		font-size: 1.5rem;
+	}
 }
