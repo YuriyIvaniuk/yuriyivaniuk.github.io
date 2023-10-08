@@ -14,7 +14,7 @@
 	<div class="header-block">
 		<div class="overlay"></div>
 		<header>
-			<div class="content-wrap d-flex">
+			<div class="content-wrap d-flex" id="topPoint">
 				<div class="logo">
 					Portofolio
 				</div>
@@ -25,27 +25,27 @@
 					</div>
 					<ul id='mainMenu' class='menu-list hide-menu'>
 						<li>
-							<a href="#">
+							<a href="#" id="homeButton">
 								Home
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" id="aboutButton">
 								About
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" id="skillsButton">
 								Skills
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" id="portfolioButton">
 								Portfolio
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" id="get-inButton">
 								Contact
 							</a>
 						</li>
@@ -55,29 +55,23 @@
 		</header>
 		<div class="text-box">
 			<div class="main-text">Hi, It`s basic Portfolio</div>
-			<!--<div class="main-text-red">In Development!!!</div>-->
 			<div class="second-text">Developer from Ivano-Frankivsk</div>
-			<div class="latest"><a href="#">Latest works</a></div>
+			<div class="latest"><a href="#" id="latestButton">Latest works</a></div>
 		</div>
 	</div>
-	<p class="title-text">About</p>
+	<p class="title-text" id="aboutPoint">About</p>
 	<p class="default-text">
-		Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. 
-		Rhoncus, diam penatibus aliquet tellus, in rutrum augue.
-		 Pellentesque senectus risus consectetur et sed purus sed. 
-		 Consectetur adipiscing elit. 
-		 Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. 
+		Це сайт-портфоліо, на ньому буде відображено роботи та деяка інформація про розробника
+		На ньому присутні різного роду та складності елементи, інформація про вміння, навички, сфери роботи та воркспейси, 
+		і відповідно рівні навичок роботи.
 <br>
 <br>
-	Arcu, sed nisi, mi, arcu libero phasellus tincidunt. 
-	Rhoncus, diam penatibus aliquet tellus, in rutrum augue. 
-	Pellentesque senectus risus consectetur et sed purus sed. 
-	Consectetur adipiscing elit.
-	Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. 
-	diam penatibus aliquet tellus, in rutrum augue.
- 	Pellentesque.
+	Також, хотів би попросити всіх хто переглянув,
+	надати інформацію про помилки роботи, ідеї для подальшої взаємодії, чи розробки.
+	Інформацію про соціальні мережі, портфоліо та інші особисті 
+	дані ви зможете знайти протягом перегляду. Приємного Перегляду!
 	</p>
-	<p class="title-text">Skills</p>
+	<p class="title-text" id="skillsPoint">Skills</p>
 	<div class="self-content"><div class="self-image"></div>
 	<div class="list-bars-container">
 	<ul class="skills-list">
@@ -114,11 +108,11 @@
 	</ul>
 </div>
 </div>
-<p class="title-text">Portfolio</p>
-<p class="center-text">UX Research</p>
-<p class="default-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	Ac dictum nibh nam odio cursus id. 
-	Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+<p class="title-text" id="portfolioPoint">Portfolio</p>
+<p class="center-text">Детальніші дані</p>
+<p class="default-text"> Приклади робіт розробника, завдання до здачі
+	різні лабораторні роботи, практичні та інші завдання.
+	</p>
 <div class="portfolio">
 	<p>Lab 1:</p>
 	<div class="tasks">
@@ -132,9 +126,10 @@
 	<a href="https://yuriyivaniuk.github.io/ЛР1(нова)/8/index.html">Зд.8</a>
 </div>
 </div>
-<p class="title-text">Get in Touch</p>
+<p class="title-text" id="get-inPoint">Get in Touch</p>
 <footer>
 <div class="Sources">
+	<div class="top-blocks">
 	<ul>
 		<li><a href="#">Dribbble</a></li>
 		<li><a href="#">Behance</a></li>
@@ -149,13 +144,13 @@
 		<li><a href="#">Twitter</a></li>
 	</ul>
 </div>
-<div class="bottom-footer">
-<div class="contact-box">
-<p class="email">iv.yurka@gmail.com</p>
-<p class="mobile">+380956361945</p>
+	<div class="contact-box">
+		<p class="email">iv.yurka@gmail.com</p>
+		<p class="mobile">+380956361945</p>
+		</div>
 </div>
-<a href="#">
-<i class="fa-solid fa-chevron-up"></i></a>
+<div class="bottom-footer">
+<i class="fa-solid fa-chevron-up" id="topButton"></i></a>
 </div>
 </footer>
 <script src='script/script.js'></script>

@@ -19,7 +19,7 @@ ul, ol {
 .header-block {
 	height: 100vh;
 	position: relative;
-	background: url('../images/main-bg.png');
+	background: url('../images/bg2.jfif');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -55,12 +55,6 @@ header .content-wrap .logo {
 	font-weight: bold;
 
 }
-
-.menu-list {
-	position: absolute;
-	background: #fff;
-}
-
 .menu-list li:not(:last-child) {
 	margin-bottom: 20px;
 }
@@ -111,6 +105,7 @@ header .content-wrap .logo {
 .second-text{
 	padding-top: 1.5rem;
 	font-size: 1.2rem;
+	color:black;
 }
 .latest{
 	font-size: 2rem;
@@ -125,6 +120,7 @@ header .content-wrap .logo {
 	font-size: 2.5rem;
 	text-align: center;
 }
+
 .default-text{
 	padding: 1vh 3vw;
 	font-size: 1.5rem;
@@ -185,7 +181,7 @@ header .content-wrap .logo {
 	width: 45%;
 }
 .portfolio{
-	background-color: lightgoldenrodyellow;
+	background-color: darkgrey;
 	margin: 0 auto;
 	width: 93vw;
 	height: 20vh;
@@ -209,15 +205,23 @@ header .content-wrap .logo {
 }
 .Sources{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 	height: 50%;
 	width: 100%;
 	color:#000;
 	z-index: 10;
 }
+.top-blocks{
+	display:flex;
+}
+.Sources ul{
+	width: 70%;
+	margin-right: 2%;
+}
 .Sources li{
 	margin:5vh 0px;
+	margin-left: 5vw;
 }
 .Sources li a{
 	text-decoration: none;
@@ -236,8 +240,15 @@ header .content-wrap .logo {
 	margin-bottom: 1.5rem;
 	max-width: 1100px;
 }
+.contact-box{
+	width: 90%;
+	margin-left: 5vw;
+	font-size: 16px;
+}
 .bottom-footer a{
 	color:#000;
+	text-align: right;
+	margin-left: 90%;
 }
 @media screen and (min-width: 800px) {
 	header .content-wrap .logo {
@@ -263,7 +274,7 @@ header .content-wrap .logo {
 	}
 	.main-menu a {
 		font-size: 1.5rem;
-		color:#fff;
+		color:black;
 	}
 	.menu-list li:not(:last-child) {
 		margin-bottom: 20px;
@@ -364,6 +375,15 @@ header .content-wrap .logo {
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		flex-direction: row;
+	}
+	.top-blocks{
+		width: 65%;
+	}
+	.contact-box{
+		width: 25%;
+		margin-top: 20px;
+		font-size: 1.5rem;
 	}
 	.Sources ul{
 		width: 50%;
@@ -374,5 +394,15 @@ header .content-wrap .logo {
 		display: list-item;
 		margin: 0;
 		font-size: 1.5rem;
+	}
+	.bottom-footer{
+		width: 95%;
+	}
+	.bottom-footer i{
+		color:#000;
+		font-size: 2rem;
+		width: 100%;
+		max-width: 1100px;
+		justify-content: space-around;
 	}
 }
