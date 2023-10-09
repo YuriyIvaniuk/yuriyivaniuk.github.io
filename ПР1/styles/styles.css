@@ -119,6 +119,10 @@ header .content-wrap .logo {
 	padding-top:2vh;
 	font-size: 2.5rem;
 	text-align: center;
+	width: 100%;
+}
+.colored{
+	background-color: #fffaf2;
 }
 
 .default-text{
@@ -132,6 +136,7 @@ header .content-wrap .logo {
 }
 .self-content{
 	width: 100%;
+	background-color: #fffaf2;
 }
 .self-image{
 	margin: 0 auto;	
@@ -212,6 +217,9 @@ header .content-wrap .logo {
 	color:#000;
 	z-index: 10;
 }
+footer{
+	background-color: #fffaf2;
+}
 .top-blocks{
 	display:flex;
 }
@@ -244,11 +252,23 @@ header .content-wrap .logo {
 	width: 90%;
 	margin-left: 5vw;
 	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+.contact-box a{
+	text-align: left;
+	text-decoration: none;
 }
 .bottom-footer a{
 	color:#000;
 	text-align: right;
 	margin-left: 90%;
+}
+.email{
+	color:black;
+}
+.mobile{
+	color:black;
 }
 @media screen and (min-width: 800px) {
 	header .content-wrap .logo {
@@ -305,8 +325,7 @@ header .content-wrap .logo {
 		text-align: bottom;
 	}
 	.title-text{
-		width: 90%;
-		max-width: 1100px;
+		width: 100%;
 		text-align: left;
 		padding-left: 20px;
 	}
