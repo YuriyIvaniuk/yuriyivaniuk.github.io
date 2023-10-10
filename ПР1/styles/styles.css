@@ -99,15 +99,14 @@ header .content-wrap .logo {
 	font-size: 2.5rem;
 	text-align: center;
 }
-.main-text-red{
-	font-size: 5rem;
-}
 .second-text{
 	padding-top: 1.5rem;
 	font-size: 1.2rem;
 	color:black;
 }
 .latest{
+	position: absolute;
+	bottom: 5%;
 	font-size: 2rem;
 	padding-top: 30vh;
 	width: 100%;
@@ -120,6 +119,7 @@ header .content-wrap .logo {
 	font-size: 2.5rem;
 	text-align: center;
 	width: 100%;
+	margin: 0 auto;
 }
 .colored{
 	background-color: #fffaf2;
@@ -135,7 +135,6 @@ header .content-wrap .logo {
 	text-align: center;
 }
 .self-content{
-	width: 100%;
 	background-color: #fffaf2;
 }
 .self-image{
@@ -162,7 +161,6 @@ header .content-wrap .logo {
 	padding: 20px 0px;
 }
 .progress-bar{
-	padding: 0px 0px;
 	margin: 13px 0px;
 	width: 100%;
 	background-color: #f5d6ab;
@@ -189,7 +187,6 @@ header .content-wrap .logo {
 	background-color: darkgrey;
 	margin: 0 auto;
 	width: 93vw;
-	height: 20vh;
 	align-items: center;
 	position: relative;
 	display:flex;
@@ -259,11 +256,6 @@ footer{
 	text-align: left;
 	text-decoration: none;
 }
-.bottom-footer a{
-	color:#000;
-	text-align: right;
-	margin-left: 90%;
-}
 .email{
 	color:black;
 }
@@ -304,40 +296,35 @@ footer{
 		width: 50%;
 		text-align: left;
 	}
+	.text-box{
+		display: flex;
+		margin: 0 auto;
+		max-width: 1750px;
+		align-items: center;
+		flex-direction: column;
+	}
 	.main-text{
 		text-align: left;
-		width: 90%;
-		max-width: 1100px;
+		max-width: 1750px;
 		padding-top: 25vh;
 		padding-left:20px;
 		font-size:5rem;
 	}
 	.second-text{
-		width: 90%;
-		max-width: 1100px;
+		width: 100%;
 		padding-left:20px;
 		font-size:2rem;
 		text-align: left;
-	}
-	.latest{
-		font-size: 2rem;
-		padding-top: 30vh;
-		text-align: bottom;
 	}
 	.title-text{
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
 	}
-	.self-content{
-		width: 100%;
-		display: flex;
-		padding: 1vh 3vw;
-	}
 	.self-image{
 		margin: 0	0	0	0;
 		width: 25%;
-		height: 50vh;
+		height: 30vh;
 		background: url('../images/self-image.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -367,32 +354,16 @@ footer{
 	.bars-tools li p{
 		padding: 20px 0px;
 	}
-	.progress-bar{
-		margin: 14px 0px;
-		width: 100%;
-		background-color: #f5d6ab;
-	}
 	.progress{
-		padding: 16px 0px;
-		background-color: #c66c49;
-		height: 100%;
 		width: 25%;
 	}
 	.progress1{
-		padding: 16px 0px;
-		background-color: #c66c49;
-		height: 100%;
 		width: 40%;
 	}
 	.progress2{
-		padding: 16px 0px;
-		background-color: #c66c49;
-		height: 100%;
 		width: 60%;
 	}
 	.Sources{
-		display: flex;
-		width: 100%;
 		justify-content: center;
 		flex-direction: row;
 	}
