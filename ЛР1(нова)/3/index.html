@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input{
+            width: 20vw;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
     <p id="Month">Введіть номер місяця від 1 до 12:</p>
-    <input type="number" id="field">
+    <input type="number" id="field" min="1" max="12">
     <button id="showDialog">Готово</button>
     <p id="textAlert"></p>
     <script src="scripts/script.js"></script>
