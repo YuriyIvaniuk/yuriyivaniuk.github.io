@@ -77,7 +77,9 @@ header .content-wrap .logo {
 .d-flex {
 	display: flex;
 }
-
+.flex-column{
+	flex-direction: column;
+}
 .hide {
 	display: none;
 }
@@ -126,7 +128,6 @@ header .content-wrap .logo {
 }
 
 .default-text{
-	padding: 1vh 3vw;
 	font-size: 1.5rem;
 	text-align: justify;
 }
@@ -146,7 +147,6 @@ header .content-wrap .logo {
 	background-size: cover;
 	background-position: center;
 }
-
 .list-bars-container{
 	width: 60%;
 	justify-content: center;
@@ -186,7 +186,6 @@ header .content-wrap .logo {
 .portfolio{
 	background-color: darkgrey;
 	margin: 0 auto;
-	width: 93vw;
 	align-items: center;
 	position: relative;
 	display:flex;
@@ -333,6 +332,9 @@ footer{
 @media screen and (min-width: 800px) {
 	header .content-wrap .logo {
 		order: 0;
+	}
+	.flex-column{
+		flex-direction: row;
 	}
 	.icons {
 		display: none;
