@@ -48,19 +48,22 @@ header .content-wrap .logo {
 }
 
 .logo {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	color: #fff;
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
 
 }
+.menu-list{
+	position: absolute;
+}
 .menu-list li:not(:last-child) {
 	margin-bottom: 20px;
 }
 
 .menu-list a {
-	font-size: 2rem;
+	font-size: 1rem 	;
 	color: #000;
 	text-decoration: none;
 }
@@ -98,18 +101,18 @@ header .content-wrap .logo {
 .main-text{
 	padding-top:20vh;
 	width: 100%;
-	font-size: 2.5rem;
+	font-size: 1.2rem;
 	text-align: center;
 }
 .second-text{
 	padding-top: 1.5rem;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color:black;
 }
 .latest{
 	position: absolute;
 	bottom: 5%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding-top: 30vh;
 	width: 100%;
 	text-align: center;
@@ -161,12 +164,12 @@ header .content-wrap .logo {
 	padding: 20px 0px;
 }
 .progress-bar{
-	margin: 13px 0px;
+	margin: 16px 0px;
 	width: 100%;
 	background-color: #f5d6ab;
 }
 .progress{
-	padding: 13px 0px;
+	padding: 16px 0px;
 	background-color: #c66c49;
 	height: 100%;
 	width: 15%;
@@ -349,7 +352,7 @@ footer{
 		display: flex;
 	}
 	li{
-		padding:20px 20px 0px 20px;
+		padding:20px 0px 0px 30px;
 	}
 	.main-menu{
 		text-align: right;
