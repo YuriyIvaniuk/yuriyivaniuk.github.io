@@ -41,3 +41,12 @@ const topPoint=document.getElementById("topPoint")
 topButton.addEventListener("click", function(){
 topPoint.scrollIntoView({behavior:"smooth"});
 })
+
+function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	  x.style.display = "none";
+	} else {
+	  x.style.display = "block";
+	}
+}
