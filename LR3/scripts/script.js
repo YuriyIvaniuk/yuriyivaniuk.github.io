@@ -66,12 +66,12 @@ function listPositionGenerator(){
     } else{
         list.style.listStylePosition="inside";
     }
-    text.value='listStylePosition:'+list.style.listStylePosition+';';
+    text.value='list-style-position:'+list.style.listStylePosition+';';
 }
 function listTypeGenerator(){
     let list=document.getElementById("third");
     let selector=document.querySelector("select");
     list.style.listStyleType=selector.value;
     let text=document.getElementById("last-text");
-    text.value='ListStylePosition:'+list.style.listStyleType+';';
+    text.value='list-style-type:'+list.style.listStyleType+';';
 }
