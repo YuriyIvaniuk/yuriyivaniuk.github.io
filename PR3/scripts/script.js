@@ -20,7 +20,9 @@ function addItem(){
     saveButton.style.margin="0 0.5rem";
     
     itemDeleteButton.addEventListener("click", function(){
-        li.remove();
+        if (confirm("Точно видалити?")){
+            li.remove();
+        }
     })
     
     itemEditButton.addEventListener("click", function(){
