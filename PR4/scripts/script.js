@@ -23,6 +23,9 @@ function displayLocation(position) {
     let distance = document.getElementById("distance");
     distance.innerHTML = `You are ${km} km from the College`;
 
+    buttonFocus.addEventListener("click", function(){
+        map.flyTo([latitude, longitude], 17);
+    })
     if (!map) {
         map = L.map('map').setView([latitude, longitude], 13);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -40,9 +43,6 @@ function displayLocation(position) {
     var timeMarker = L.marker([latitude, longitude]).addTo(map);
     timeMarker.bindPopup(timeString).openPopup();
     
-    buttonFocus.addEventListener("click", function(){
-        map.flyTo([latitude, longitude], 17);
-    })
 }
 function displayError(error) {
     const errorTypes = {
@@ -81,10 +81,6 @@ const ourCoords = {
     longitude:  24.73367598672833
 }   
 setInterval(getMyLocation,5000);
-
-buttonFocus.addEventListener("click", function(){
-    map.flyTo([latitude, longitude], 17);
-})
 setButton.addEventListener("click", function(){
     let destLatitude=document.getElementById("latitude").value;
     let destlongitude=document.getElementById("longitude").value;   
