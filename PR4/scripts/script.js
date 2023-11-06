@@ -1,16 +1,25 @@
 document.addEventListener('DOMContentLoaded', getMyLocation);
+let intervalId = null;
 
-let map;
+let map = L.map('map')
+map.setView([48.94314364908576,24.73367598672833], 12)
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map)
 let buttonFocus=document.getElementById("focus");
 let setButton=document.getElementById("set");
 let buttonFocusOnDest=document.getElementById("focusOnDest");
+let watchId = null
 
 function getMyLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(displayLocation, displayError);
-    } else {
-        alert("Oops, no geolocation support");
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(displayLocation, displayError)
+    } else{
+        alert('Oops, no geolocaton support')
     }
+    map.on('click', onMapClick);
 }
 
 function displayLocation(position) {
@@ -36,14 +45,31 @@ function displayLocation(position) {
 
     var marker = L.marker([latitude, longitude]).addTo(map);
     marker.bindPopup("Your place").openPopup();
-
-    // Додавання інформації про час
     var time = new Date(position.timestamp);
     var timeString = `Location timestamp: ${time.toLocaleString()}`;
     var timeMarker = L.marker([latitude, longitude]).addTo(map);
     timeMarker.bindPopup(timeString).openPopup();
     
 }
+
+function onMapClick(e) {
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(`${e.latlng.lat.toFixed(7)}, ${e.latlng.lng.toFixed(7)}`)
+        .openOn(map)
+}
+document.getElementById('watch').addEventListener('click', function() {
+    if (intervalId === null) {
+        intervalId = setInterval(getMyLocation, 5000);
+    }
+});
+
+document.getElementById('clearWatch').addEventListener('click', function() {
+    if (intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+});
 function displayError(error) {
     const errorTypes = {
         0: "Unknown error",
@@ -80,7 +106,6 @@ const ourCoords = {
     latitude: 48.94314364908576,
     longitude:  24.73367598672833
 }   
-setInterval(getMyLocation,5000);
 setButton.addEventListener("click", function(){
     let destLatitude=document.getElementById("latitude").value;
     let destlongitude=document.getElementById("longitude").value;   
