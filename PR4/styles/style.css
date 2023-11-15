@@ -1,3 +1,11 @@
-#map{
-    height: 500px;
+.content-wrap{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    padding: 0px 10px;
+    margin: 3px 10px;
 }
