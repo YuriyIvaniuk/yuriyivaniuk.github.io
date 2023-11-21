@@ -1,11 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    color:azure;
+}
 .content-wrap{
     display: flex;
-    width: 100%;
+    width: 60%;
+    height: 80%;
+    border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: slategray;
+    border: 1px solid azure;
+    padding: 10px;
 }
 button{
     padding: 0px 10px;
-    margin: 3px 10px;
+    color:azure;
+    background-color: transparent;
+    border: 1px solid azure;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.item{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 1px solid black;
+    margin: 2rem 0;
+}
+#taskList{
+    width: 70%;
+    height: 80%;
+    overflow-y: auto;
+}
+.item div:last-child{
+    font-size: 1.3rem;
+    width: 20%;
+}
+.changer{
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid azure;
+    width: 5%;
+}
+#input{
+    margin-top: 2rem;
+    width: 70%;    
+    background-color: transparent;
+    padding: 0.5rem;
+    color:azure;
+    border:none;
+    border-bottom: 2px solid azure;
+}
+body{
+    background-color: rgb(89, 102, 116);
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+::placeholder{
+    color:azure;
+    text-align: center;
+}
+.item p{
+    width: 50%;
+}
+.buttonholder{
+    display: flex;
+    width: 70%;
+    margin-top: 2rem;
+}
+.buttonholder :first-child{
+    margin-right: 1rem;
 }
