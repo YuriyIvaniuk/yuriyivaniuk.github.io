@@ -1,0 +1,92 @@
+{
+    "items" : [
+        {
+            "newItem" : true,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/1.jpg",
+            "name" : "Ноутбук Apple MacBook Air 13` M1 8/256GB 2020",
+            "comingSoon" : false,
+            "sale" : true,
+            "prevPrice" : "43 400₴",
+            "price" : "34 499₴"
+        },
+        {
+            "newItem" : false,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/2.jpg",
+            "name" : "Ноутбук LENOVO Ideapad Slim 3 15AMN8 Arctic Grey",
+            "comingSoon" : false,
+            "sale" : false,
+            "prevPrice" : "",
+            "price" : "12 555₴"
+        },
+        {
+            "newItem" : false,
+            "hotItem" : true,
+            "category" : "Ноутбуки",
+            "photo" : "img/3.jpg",
+            "name" : "Ноутбук ASUS TUF Gaming F15 FX506HF-HN033",
+            "comingSoon" : false,
+            "sale" : true,
+            "prevPrice" : "33 300₴",
+            "price" : "31 200₴"
+        },
+        {
+            "newItem" : false,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/4.jpg",
+            "name" : "Ноутбук Xiaomi RedmiBook Pro 14 R5/16G/512G/W11",
+            "comingSoon" : true,
+            "sale" : false,
+            "prevPrice" : "",
+            "price" : ""
+        },
+        {
+            "newItem" : true,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/5.jpg",
+            "name" : "Ноутбук Lenovo Legion 5 15ARH7",
+            "comingSoon" : false,
+            "sale" : false,
+            "prevPrice" : "",
+            "price" : "44 000₴"
+        },
+        {
+            "newItem" : false,
+            "hotItem" : true,
+            "category" : "Ноутбуки",
+            "photo" : "img/6.jpg",
+            "name" : "Ноутбук LENOVO ThinkBook 15 G3 ACL",
+            "comingSoon" : false,
+            "sale" : true,
+            "prevPrice" : "26 999₴",
+            "price" : "20 999₴"
+        },
+        {
+            "newItem" : false,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/7.jpg",
+            "name" : "Ноутбук MSI Raider (RAIDER_GE78HX_13VI-207UA)",
+            "comingSoon" : true,
+            "sale" : false,
+            "prevPrice" : "",
+            "price" : ""
+        },
+        {
+            "newItem" : false,
+            "hotItem" : false,
+            "category" : "Ноутбуки",
+            "photo" : "img/8.jpg",
+            "name" : "Ноутбук Acer Aspire 3 A315-35-C2L7",
+            "comingSoon" : false,
+            "sale" : false,
+            "prevPrice" : "",
+            "price" : "11 999₴"
+        }
+    ]
+}
